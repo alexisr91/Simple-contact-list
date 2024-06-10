@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />	
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Formulaire contact</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+
+<main class="container">
+	<section class=" flex row justify-center mt-4">
+		<div class="grid grid-cols-2 md:space-x-72"> <!-- Creation 2 colonnes -->
+		
+
+<!-- 1er colonne -->
+<div class="rounded overflow-hidden max-h-36 shadow-lg bg-slate-300">
+      <div class="px-6 py-4">
+        <div class="font-bold text-xl ">Insertion des contacts</div>
+        <form id="form-contact">
+
+        	<div class="form-group mb-2 border-y-neutral-800">
+        		<input type="text" name="nom" id="contact" class="form-control border-y-violet-300 h-8 mt-2" placeholder="Nouveau contact">
+        	</div>      		
+        		<button class="bg-sky-500 text-white p-2 my-1">Ajouter un contact</button>
+        </form>
+      </div>
+    </div>
+</div>
+
+
+
+
+<!-- 2eme colonne -->
+<div class="rounded overflow-hidden shadow-lg px-6 py-4 bg-teal-300">
+        <div class="font-bold text-xl mb-2">Liste des contacts</div>
+        	<div class="form-group mb-4 border-y-neutral-800">
+        		<input type="text" name="filtre" id="filtre" class="form-control border-y-violet-300 h-8" placeholder="Filtrer des contacts">
+        	</div>   
+
+        		<ul class="list-group"> <!-- J'ai du changer le nom de class ( en JS aussi ) car les valeurs rentrées me mettaient le meme nom de class dans l'inspecteur -->
+        		</ul>   
+
+        		<button class="bg-sky-800 text-white p-2"><a href="#" class="suppress">Vider la liste des contacts</a></button>
+      </div>
+    </div>
+
+
+
+</div>
+
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
